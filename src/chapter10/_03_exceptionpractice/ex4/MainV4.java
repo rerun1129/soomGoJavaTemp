@@ -1,6 +1,6 @@
 package chapter10._03_exceptionpractice.ex4;
 
-import exception.ex4.exception.SendExceptionV4;
+import chapter10._03_exceptionpractice.ex4.exception.SendExceptionV4;
 
 import java.util.Scanner;
 

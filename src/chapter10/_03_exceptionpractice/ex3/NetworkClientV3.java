@@ -1,7 +1,7 @@
 package chapter10._03_exceptionpractice.ex3;
 
-import exception.ex3.exception.ConnectExceptionV3;
-import exception.ex3.exception.SendExceptionV3;
+import chapter10._03_exceptionpractice.ex3.exception.ConnectExceptionV3;
+import chapter10._03_exceptionpractice.ex3.exception.SendExceptionV3;
 
 public class NetworkClientV3 {
 

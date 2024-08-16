@@ -1,7 +1,7 @@
 package chapter10._03_exceptionpractice.ex4;
 
-import exception.ex4.exception.ConnectExceptionV4;
-import exception.ex4.exception.SendExceptionV4;
+import chapter10._03_exceptionpractice.ex4.exception.ConnectExceptionV4;
+import chapter10._03_exceptionpractice.ex4.exception.SendExceptionV4;
 
 public class NetworkClientV5 implements AutoCloseable {
 
@@ -15,7 +15,7 @@ public class NetworkClientV5 implements AutoCloseable {
 
     public void connect() {
         if (connectError) {
-            throw new ConnectExceptionV4(address, address + " 서버 연결 실패");
+            throw new ConnectExceptionV4 ( address, address + " 서버 연결 실패");
         }
         //연결 성공
         System.out.println(address + " 서버 연결 성공");
@@ -23,7 +23,7 @@ public class NetworkClientV5 implements AutoCloseable {
 
     public void send(String data) {
         if (sendError) {
-            throw new SendExceptionV4(data, address + " 서버에 데이터 전송 실패: " + data);
+            throw new SendExceptionV4 ( data, address + " 서버에 데이터 전송 실패: " + data);
             //throw new RuntimeException("ex");
         }
         //전송 성공
